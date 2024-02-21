@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import java.net.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<GridPane fx:controller="com.example.VierGewinntSetupController" 
+    xmlns:fx="http://javafx.com/fxml" alignment="center" hgap="10" vgap="10" styleClass="root">
+    <padding>
+        <Insets top="25" right="25" bottom="10" left="25"/>
+    </padding>
+    <Text id="welcome-text" text="Vier Gewinnt" GridPane.columnIndex="0" GridPane.rowIndex="0"
+        GridPane.columnSpan="2"/>
+    <Label text="Spieler 1"
+        GridPane.columnIndex="0" GridPane.rowIndex="1"/>
+    <TextField fx:id="tfPlayer1"
+        GridPane.columnIndex="1" GridPane.rowIndex="1" onKeyPressed="#tfPlayer1KeyPressed"/>
+    <Label text="Spieler 2"
+        GridPane.columnIndex="0" GridPane.rowIndex="2"/>
+    <TextField fx:id="tfPlayer2"
+        GridPane.columnIndex="1" GridPane.rowIndex="2" onKeyPressed="#tfPlayer2KeyPressed"/>
+    <Label fx:id="errMessage"
+        GridPane.columnIndex="1" GridPane.rowIndex="3"/>
+    <HBox spacing="10" alignment="bottom_right" 
+        GridPane.columnIndex="1" GridPane.rowIndex="4">
+        <Button fx:id="cancelButton" text="abbrechen" onAction="#switchToPrimary" />
+        <Button fx:id="playButton" text="spielen" onAction="#playGame" />
+    </HBox>
+    <stylesheets>
+    <URL value="@games.css" />
+  </stylesheets>
+</GridPane>

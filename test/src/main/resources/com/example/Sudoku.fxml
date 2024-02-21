@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import java.net.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<VBox fx:controller="com.example.SudokuController" 
+    xmlns:fx="http://javafx.com/fxml" alignment="center"  spacing="15" styleClass="root">
+    <GridPane fx:id="gpTTT" alignment="center">
+        <padding>
+            <Insets top="25" right="25" bottom="10" left="25"/>
+        </padding>
+    </GridPane>
+    <Label fx:id="Message"/>
+    <HBox spacing="10" alignment="center">
+        <Button fx:id="cancelButton" text="replay" onAction="#initSudokuPlayground" />
+        <Button fx:id="cancelButton" text="beenden" onAction="#switchToPrimary" />
+    </HBox>
+    <padding>
+        <Insets top="25" right="25" bottom="10" left="25"/>
+    </padding>
+    <stylesheets>
+        <URL value="@games.css" />
+    </stylesheets>
+</VBox>

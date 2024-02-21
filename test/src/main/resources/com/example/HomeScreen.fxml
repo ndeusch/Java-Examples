@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import java.net.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<VBox alignment="CENTER" spacing="20.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.HomeScreenController" styleClass="root">
+   <children>
+      <Text id="welcome-text"  text="Spielauswahl" />
+      <Button fx:id="buttonPTTT" text="Tic Tac Toe" onAction="#PlayTicTacToe"/>
+      <Button fx:id="buttonP4G" text="Vier Gewinnt" onAction="#PlayVierGewinnt"/>
+      <Button fx:id="buttonPSudoku" text="Sudoku" onAction="#PlaySudoku"/>
+     <Button fx:id="buttonDM3" text="Modulo 3" onAction="#PlayDivMod3"/>
+  </children>
+   <padding>
+      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+   </padding>
+   <stylesheets>
+    <URL value="@games.css" />
+  </stylesheets>
+</VBox>
